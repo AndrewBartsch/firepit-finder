@@ -1,0 +1,98 @@
+/* Minimal Swiss style */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    padding: 2rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tagline {
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* Fire pit cards */
+
+.firepit-card {
+    border: 1px solid #eaeaea;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 640px;
+}
+
+.firepit-card p {
+    margin: 0.4rem 0;
+    color: #333;
+  }
+
+.firepit-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.firepit-card .wood {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Weather + recommendation placeholders */
+
+.firepit-card .weather {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 0.6rem;
+}
+
+.firepit-card .recommendation {
+    margin-top: 0.6rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Recommendation states */
+
+.recommendation.good {
+    color: #0a7a3d;
+}
+
+.recommendation.borderline {
+    color: #b7791f;
+}
+
+.recommendation.bad {
+    color: #b91c1c;
+}
+
+.firepit-card {
+    cursor: pointer;
+}
+
+.firepit-card.selected {
+    border-color: #111;
+    background: #fafafa;
+}
