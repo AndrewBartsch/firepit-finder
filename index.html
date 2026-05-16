@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Fire Pit Finder</title>
 
+        <!-- Leaflet CSS - MUST come before our CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+
         <!-- Link to our CSS -->
         <link rel="stylesheet" href="style.css" /> 
     </head>
@@ -18,7 +23,13 @@
         <main>
             <section id="intro">
                 <h2>Welcome</h2>
-                <p>Select a fire pit to see weather conditions and a recommendation.</p>
+                <p>Select a fire pit to see weather conditions and a recommendation. Click on the map or list below.</p>
+            </section>
+            
+            <!-- NEW: Map Container -->
+            <section id="map-section">
+                <h2>Map</h2>
+                <div id="map"></div>
             </section>
 
             <section id="firepit-list">
@@ -32,6 +43,11 @@
         <footer>
             <p>© 2025 Fire Pit Finder</p>
         </footer>
+
+        <!-- Leaflet JavaScript - MUST come before our JS -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
 
         <!-- Link to our JS -->
          <script src="app.js"></script>
